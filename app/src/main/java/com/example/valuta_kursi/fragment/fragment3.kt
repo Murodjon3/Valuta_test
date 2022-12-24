@@ -7,13 +7,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.cardview.widget.CardView
-import com.example.valuta_kursi.BViewModel
 import com.example.valuta_kursi.R
-import com.example.valuta_kursi.databinding.Fragment1Binding
+import com.example.valuta_kursi.databinding.FragmentFragment3Binding
 
 class fragment3 : Fragment() {
-    private var _binding: Fragment1Binding? = null
+    private var _binding: FragmentFragment3Binding? = null
 
     private val binding get() = _binding!!
     override fun onCreateView(
@@ -21,18 +19,18 @@ class fragment3 : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        _binding = Fragment1Binding.inflate(inflater, container, false)
+        _binding = FragmentFragment3Binding.inflate(inflater, container, false)
         val view = binding.root
         return view
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val share = view.findViewById<CardView>(R.id.share)
+        val share = binding.share
         share.setOnClickListener {
             shareLink("Salom")
         }
-        val sayt = view.findViewById<CardView>(R.id.sayt)
+        val sayt = binding.sayt
         sayt.setOnClickListener {
             openUrl("https://cbu.uz/uz/arkhiv-kursov-valyut/")
         }

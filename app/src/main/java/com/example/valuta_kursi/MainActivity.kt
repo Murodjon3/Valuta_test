@@ -18,25 +18,22 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val fragment11 = findViewById<ImageView>(R.id.image2)
-        val fragment22 = findViewById<ImageView>(R.id.imageView)
-        val fragment33 = findViewById<ImageView>(R.id.imageView3)
 
+        changeFragment(Fragment2())
 
-        fragment33.setOnClickListener {
+        findViewById<ImageView>(R.id.menu).setOnClickListener {
+            changeFragment(Fragment2())
+        }
+
+        findViewById<ImageView>(R.id.settings).setOnClickListener {
             changeFragment(fragment3())
         }
 
-        fragment22.setOnClickListener {
-            changeFragment(Fragment2())
-        }
+        findViewById<ImageView>(R.id.value).setOnClickListener {
             changeFragment(Fragment1())
-
-        fragment11.setOnClickListener {
         }
 
-        val chat = findViewById<ImageView>(R.id.imagechat)
-        chat.setOnClickListener {
+        findViewById<ImageView>(R.id.imagechat).setOnClickListener {
             val view = layoutInflater.inflate(R.layout.game1, null)
 
             val kirilcha = view.findViewById<Switch>(R.id.switch1)
@@ -57,6 +54,7 @@ class MainActivity : AppCompatActivity() {
             dialog.show()
         }
     }
+
     private fun changeFragment(fragment: Fragment) {
         val fragmentManager = supportFragmentManager
         val fragmentTransaction = fragmentManager.beginTransaction()
