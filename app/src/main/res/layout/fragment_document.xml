@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardBackgroundColor="#FFFFFF"
+    app:cardCornerRadius="25dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="415dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="95dp"
+        app:cardBackgroundColor="@color/black">
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="20dp"
+            app:srcCompat="@drawable/ic_baseline_lens_24" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="320dp"
+            android:layout_marginTop="50dp"
+            android:text="Ccy"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="180dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="45dp"
+            android:ems="10"
+            android:hint="0"
+            android:inputType="text"
+            android:maxLines="1"
+            android:minEms="1"
+            android:textSize="24sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginTop="100dp"
+        android:layout_height="90dp">
+
+        <ImageView
+            android:id="@+id/imageUZB"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="25dp"
+            app:srcCompat="@drawable/img_8" />
+
+        <TextView
+            android:id="@+id/textUZB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="320dp"
+            android:layout_marginTop="50dp"
+            android:text="Sum"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/editTextUZB"
+            android:layout_width="180dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="45dp"
+            android:ems="10"
+            android:hint="0"
+            android:inputType="text"
+            android:maxLines="1"
+            android:minEms="1"
+            android:textSize="24sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginTop="190dp"
+        android:layout_height="90dp">
+
+        <ImageView
+            android:id="@+id/imageEN"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="25dp"
+            android:layout_gravity="center_vertical"
+            app:srcCompat="@drawable/img_9" />
+
+        <TextView
+            android:id="@+id/textEN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="320dp"
+            android:layout_marginTop="50dp"
+            android:text="Dollor"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/editTextEN"
+            android:layout_width="180dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="45dp"
+            android:ems="10"
+            android:hint="0"
+            android:inputType="text"
+            android:maxLines="1"
+            android:minEms="1"
+            android:textSize="24sp" />
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>
